@@ -1,6 +1,6 @@
 /* TBG DIGITAL PWA: Local shell + optional external Leaflet assets. OSM map tiles are not promised offline. */
-const CACHE_VERSION = 'tbg-digital-pwa-v1-20261023';
-const RUNTIME_CACHE = 'tbg-digital-pwa-runtime-v1-20261023';
+const CACHE_VERSION = 'tbg-digital-pwa-v2-20261023';
+const RUNTIME_CACHE = 'tbg-digital-pwa-runtime-v2-20261023';
 const CORE = ['./', './index.html', './manifest.webmanifest', './icon-192.png', './icon-512.png'];
 const LEAFLET = [
   'https://unpkg.com/leaflet@1.9.4/dist/leaflet.css',
