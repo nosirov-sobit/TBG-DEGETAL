@@ -1,7 +1,7 @@
 {
-  "name": "TBG DIGITAL 2.3 — Toshkent Botanika bog‘i",
+  "name": "TBG DIGITAL 2.4 — Toshkent Botanika bog‘i",
   "short_name": "TBG DIGITAL",
-  "description": "TBG DIGITAL — tashrifchilar xaritasi va mahalliy ilmiy GIS boshqaruv paneli (sinov)",
+  "description": "TBG DIGITAL — daraxt pasportlari, sana bo‘yicha fotogalereya va ilmiy monitoring (sinov)",
   "lang": "uz",
   "start_url": "./",
   "scope": "./",
