@@ -1,0 +1,12 @@
+TBG DIGITAL 2.6 — O‘simliklar savdosi katalogi (1-variant)
+
+1) Papkadagi 6 ta ish faylini GitHub repozitoriyasining asosiy katalogiga yuklang:
+   index.html, manifest.webmanifest, service-worker.js, icon-192.png, icon-512.png, shop-catalog.json
+   README yoki QOLLANMA.txt yuklanishi shart emas.
+2) https://nosirov-sobit.github.io/TBG-DEGETAL/ ni oching.
+3) «Ilmiy xodim (demo)» -> «Sotuvni boshqarish» bo‘limida sotuvdagi o‘simlik nomi, narxi, soni, foto va bog‘lanish raqamlarini kiriting.
+4) «shop-catalog.json eksport» ni bosing.
+5) Faqat eksport qilingan shop-catalog.json faylini GitHub’ga qayta yuklang — tashrifchilar katalogni yangilangan holatda ko‘radi.
+6) Telegram tugmasi savdo bilan shug‘ullanuvchi shaxsning t.me chatini ochadi; buyurtma matni foydalanuvchi tomonidan yuboriladi. Telefon tugmasi telefon terish oynasini ochadi.
+
+MUHIM: Xodim ko‘rinishi demo; unda haqiqiy parol yoki rol himoyasi yo‘q. Brauzerda saqlangan qoralama boshqa qurilmalarga o‘tmaydi. GitHub ommaviy katalogida faqat tasdiqlangan sotuv ma’lumotlarini e’lon qiling. Real narxlar va kontaktlar biz tomonidan uydirilmagan.

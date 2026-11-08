@@ -1,7 +1,7 @@
 /* TBG DIGITAL PWA: Local shell + optional external Leaflet assets. OSM map tiles are not promised offline. */
-const CACHE_VERSION = 'tbg-digital-pwa-v2-5-20261102';
-const RUNTIME_CACHE = 'tbg-digital-pwa-runtime-v2-5-20261102';
-const CORE = ['./', './index.html', './manifest.webmanifest', './icon-192.png', './icon-512.png'];
+const CACHE_VERSION = 'tbg-digital-pwa-v2-6-20261108';
+const RUNTIME_CACHE = 'tbg-digital-pwa-runtime-v2-6-20261108';
+const CORE = ['./', './index.html', './manifest.webmanifest', './icon-192.png', './icon-512.png', './shop-catalog.json'];
 const LEAFLET = [
   'https://unpkg.com/leaflet@1.9.4/dist/leaflet.css',
   'https://unpkg.com/leaflet@1.9.4/dist/leaflet.js'
@@ -38,6 +38,13 @@ self.addEventListener('fetch', event => {
       } catch {
         return (await caches.match('./index.html')) || Response.error();
       }
+    })());
+    return;
+  }
+  if (url.origin === self.location.origin && url.pathname.endsWith('/shop-catalog.json')) {
+    event.respondWith((async () => {
+      try { const response = await fetch(request, {cache: 'no-store'}); if (response.ok) { const cache=await caches.open(CACHE_VERSION); await cache.put(request,response.clone()); } return response; }
+      catch { return (await caches.match(request)) || Response.error(); }
     })());
     return;
   }
